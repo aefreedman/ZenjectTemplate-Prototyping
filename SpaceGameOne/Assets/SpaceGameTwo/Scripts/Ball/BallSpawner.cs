@@ -53,6 +53,7 @@ namespace SpaceGameTwo.Ball
             var t = new ObjectTunables {InitState = (int) initState};
             var f = ObjectFactory.Create(t);
             var m = (BallModel) f.Model;
+            m.BallTunables.Gravity = _settings.Gravity;
             f.gameObject.SetActive(true);
             m.Rigidbody2D.position = _settings.SpawnLocation;
         }
@@ -68,6 +69,7 @@ namespace SpaceGameTwo.Ball
         {
             public Vector2 SpawnLocation;
             public BallState BallState;
+            [Tooltip("Overrides the Ball's own settings")] public bool Gravity;
         }
     }
 }

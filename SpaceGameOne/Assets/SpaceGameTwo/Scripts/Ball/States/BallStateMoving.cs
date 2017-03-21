@@ -26,6 +26,8 @@ namespace SpaceGameTwo.Ball.States
             _scoreValue = tunables.BaseScore;
             _scorePointsSignal = score;
             _sprite = sprite;
+            if (tunables.Gravity)
+                _model.Rigidbody2D.gravityScale = 1f;
         }
 
 

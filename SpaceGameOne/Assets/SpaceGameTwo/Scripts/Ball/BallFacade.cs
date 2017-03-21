@@ -24,6 +24,11 @@ namespace SpaceGameTwo.Ball
             _ballTriggerExitSignal.Fire(collision, Guid);
         }
 
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             TriggerGameObjects.Add(collision.gameObject);

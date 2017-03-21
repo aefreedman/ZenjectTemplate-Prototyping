@@ -44,6 +44,7 @@ namespace SpaceGameTwo.Ball
             public float PushForceScale;
             public float PushForceMax;
             public int BaseScore;
+            public bool Gravity;
         }
     }
 }
