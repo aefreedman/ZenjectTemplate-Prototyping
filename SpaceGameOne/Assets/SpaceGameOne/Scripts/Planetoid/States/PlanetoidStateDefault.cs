@@ -24,5 +24,7 @@ namespace SpaceGameOne.States
         {
             if (_model.Rigidbody.position.sqrMagnitude > 1000 * 1000) _despawnPlanetoid.Fire(_model.Facade);
         }
+
+        public void FixedUpdate() {}
     }
 }

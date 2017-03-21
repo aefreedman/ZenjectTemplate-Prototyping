@@ -4,7 +4,7 @@ using Zenject;
 
 namespace SecretCrush.Zenject
 {
-    public class ObjectStateManager : ITickable, IInitializable, IDisposable, ILateTickable
+    public class ObjectStateManager : ITickable, IInitializable, IDisposable, ILateTickable, IFixedTickable
     {
         private int _initState;
         private object[] _initArgs;
@@ -66,6 +66,11 @@ namespace SecretCrush.Zenject
 
             StateHandler = StateFactory.Create(state, extraArgs);
             StateHandler.Initialize();
+        }
+
+        public void FixedTick()
+        {
+            StateHandler.FixedUpdate();
         }
     }
 }

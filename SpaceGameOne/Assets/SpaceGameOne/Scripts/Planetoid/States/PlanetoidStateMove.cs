@@ -1,5 +1,4 @@
-﻿using System;
-using SecretCrush.Zenject;
+﻿using SecretCrush.Zenject;
 using UnityEngine;
 using Zenject;
 
@@ -35,8 +34,9 @@ namespace SpaceGameOne.Planetoid.States
 
         public void LateUpdate()
         {
-            if (_model.Rigidbody.position.sqrMagnitude > (1000 * 1000)) _despawnPlanetoid.Fire(_model.Facade);
+            if (_model.Rigidbody.position.sqrMagnitude > 1000 * 1000) _despawnPlanetoid.Fire(_model.Facade);
         }
 
+        public void FixedUpdate() {}
     }
 }

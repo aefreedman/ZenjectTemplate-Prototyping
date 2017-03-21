@@ -8,6 +8,7 @@ namespace SecretCrush.Zenject
     /// </summary>
     public abstract class ObjectFacade : MonoBehaviour
     {
+
         public virtual ObjectModel Model { get; protected set; }
         public virtual ObjectRegistry Registry { get; protected set; }
 
@@ -16,7 +17,6 @@ namespace SecretCrush.Zenject
         {
             Model = model;
             Registry = registry;
-
             Register();
         }
 

@@ -7,7 +7,7 @@ using Zenject;
 
 namespace SpaceGameOne
 {
-    [CreateAssetMenu(fileName = "GameSettingsInstaller", menuName = "Installers/GameSettingsInstaller")]
+    [CreateAssetMenu(fileName = "Planetoid" + "GameSettingsInstaller", menuName = "Installers/PlanetoidGameSettingsInstaller")]
     public class PlanetoidGameSettingsInstaller : ScriptableObjectInstaller<PlanetoidGameSettingsInstaller>
     {
         public ObjectGlobalTunables ObjectGlobalTunablesSettings;

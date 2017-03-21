@@ -7,5 +7,6 @@ namespace SecretCrush.Zenject
         void Initialize();
         void Update();
         void LateUpdate();
+        void FixedUpdate();
     }
 }

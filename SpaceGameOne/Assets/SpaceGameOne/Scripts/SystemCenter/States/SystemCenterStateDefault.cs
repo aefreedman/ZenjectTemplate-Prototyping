@@ -1,4 +1,5 @@
 ﻿using SecretCrush.Zenject;
+using UnityEngine;
 using Zenject;
 
 namespace SpaceGameOne.SystemCenter.States
@@ -22,6 +23,8 @@ namespace SpaceGameOne.SystemCenter.States
 
         public void LateUpdate() {}
 
+        public void FixedUpdate() {}
+
         private void Grow(SystemCenterFacade facade)
         {
             if (facade == _facade)
@@ -37,7 +40,7 @@ namespace SpaceGameOne.SystemCenter.States
         {
             _growthStage = 0;
             _supernovaSignal.Fire(_model.Transform.position);
-            UnityEngine.Object.Destroy(_model.Transform.gameObject);
+            Object.Destroy(_model.Transform.gameObject);
         }
     }
 }

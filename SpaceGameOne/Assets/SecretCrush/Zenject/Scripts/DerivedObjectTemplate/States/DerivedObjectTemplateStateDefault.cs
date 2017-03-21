@@ -11,5 +11,7 @@ namespace SpaceGameOne.States
         public void Update() {}
 
         public void LateUpdate() {}
+
+        public void FixedUpdate() {}
     }
 }

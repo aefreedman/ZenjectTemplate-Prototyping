@@ -28,11 +28,11 @@ namespace SpaceGameOne.States
 
         public void Initialize() {}
 
-        public void Update()
-        {
-        }
+        public void Update() {}
 
         public void LateUpdate() {}
+
+        public void FixedUpdate() {}
 
         [Serializable]
         public class Settings {}

@@ -3,7 +3,7 @@
 namespace SecretCrush.Zenject.States
 {
     /// <summary>
-    /// Default state. If unmodified will do nothing.
+    ///     Default state. If unmodified will do nothing.
     /// </summary>
     public class ObjectStateDefault : IObjectState
     {
@@ -34,6 +34,8 @@ namespace SecretCrush.Zenject.States
         public void Update() {}
 
         public void LateUpdate() {}
+
+        public void FixedUpdate() {}
 
         [Serializable]
         public class Settings {}
